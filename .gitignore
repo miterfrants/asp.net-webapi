@@ -73,3 +73,6 @@ _[Ss]cripts
 *.nupkg
 *.ncrunchsolution
 *.dot[Cc]over
+Web.config
+Web.Debug.config
+Web.Release.config

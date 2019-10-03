@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using System.Net.Http.Headers;
 
 namespace api
 {
@@ -11,6 +9,7 @@ namespace api
         {
             config.MapHttpAttributeRoutes();
             config.Formatters.XmlFormatter.SupportedMediaTypes.Clear();
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"));
         }
     }
 }
